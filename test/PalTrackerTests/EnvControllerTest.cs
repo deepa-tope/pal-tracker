@@ -13,7 +13,7 @@ namespace PalTrackerTests
             var cloudFoundryInfo = new CloudFoundryInfo(
                 "8080",
                 "512M",
-                "2",
+                "1",
                 "127.0.0.1"
             );
 
@@ -21,7 +21,7 @@ namespace PalTrackerTests
 
             Assert.Equal("8080", response.Port);
             Assert.Equal("512M", response.MemoryLimit);
-            Assert.Equal("2", response.CfInstanceIndex);
+            Assert.Equal("1", response.CfInstanceIndex);
             Assert.Equal("127.0.0.1", response.CfInstanceAddr);
         }
     }
